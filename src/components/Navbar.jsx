@@ -1,29 +1,39 @@
-import { useGSAP } from "@gsap/react"
-import { navLinks } from "../../constants"
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { navLinks } from "../../constants";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
-  useGSAP(()=>{
-    const navTween = gsap.timeline({
-      scrollTrigger: {
-        Trigger: 'nav',
-        start: 'bottom top'
+  useGSAP(() => {
+    gsap.fromTo(
+      "nav",
+      {
+        backgroundColor: "rgba(0, 0, 0, 0)",
+        backdropFilter: "blur(0px)",
+        borderColor: "rgba(255, 255, 255, 0)",
+      },
+      {
+        backgroundColor: "rgba(1, 15, 28, 0.58)",
+        backdropFilter: "blur(18px)",
+        borderColor: "rgba(178, 235, 255, 0.12)",
+        duration: 0.35,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".ocean-page",
+          start: "90 top",
+          toggleActions: "play none none reverse",
+        },
       }
-    })
-    navTween.fromTo('nav', {
-      backgroundColor: 'transparent',
-    },
-    {
-      backgroundColor: '#00000030',
-      backgroundFilter: 'blur(10px)',
-      duration: 1,
-      ease: 'power1.inOut'
-    });
-  })
+    );
+  }, []);
+
   return (
     <nav>
-      <div>
-        <a href="#home" className="flex items-center gap-4">
-          <img src="/logo.png" alt="logo" className="rounded-[15%] w-12 h-12 md:w-14 md:h-14 object-contain" />
+      <div className="nav-inner">
+        <a href="#home" className="brand">
+          <img src="/logo.png" alt="Not Alive logo" />
           <p>Not Alive</p>
         </a>
 
@@ -36,6 +46,7 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
-  )
-}
-export default Navbar
+  );
+};
+
+export default Navbar;
