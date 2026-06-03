@@ -113,7 +113,6 @@ nav {
   height: 54px;
   border-radius: 15%;
   object-fit: contain;
-  box-shadow: 0 16px 48px rgba(0,0,0,0.45), 0 0 34px rgba(231,211,147,0.12);
 }
 
 .brand p {
