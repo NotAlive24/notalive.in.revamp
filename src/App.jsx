@@ -6,6 +6,7 @@ import About from "./components/About"
 import Achievements from "./components/Achievements";
 import Writeups from "./components/Write-ups";
 import Projects from "./components/Projects";
+import Contacts from "./components/Contacts";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Achievements />
       <Writeups />
       <Projects />
+      <Contacts />
 
 
       {/* Add your future sections/components below Hero.

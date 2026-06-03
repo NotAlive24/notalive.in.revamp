@@ -18,3 +18,10 @@ export const writeups = [
 export const projects = [
     {   href : "https://github.com/NotAlive24/void-scan", title: "Void-Scan"    }
 ]
+
+
+export const contact = [
+    {   href : "https://github.com/NotAlive24", title: "GitHub", logo: "GitHub_Invertocat_Black_Clearspace.svg", class: "small-brand"    },
+    {   href : "mailto:admin@notalive.in", title: "Email", logo: "logo-nobg.png", class: "small-brand-dihhh"    },
+    {   href : "https://discord.com/users/1332001019550240778", title: "Discord", logo: "Discord-Symbol-White.svg", class: "small-brand"    }
+]
