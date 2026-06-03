@@ -1,6 +1,6 @@
 export const navLinks = [
     {   id : "about", title: "About Me"    },
-    {   id : "thm", title: "TryHackMe"    },
+    {   id : "achievements", title: "Achievements"    },
     {   id : "isc2", title: "ISC2"    },
     {   id : "py-roadmap", title: "Python Roadmap for Cyber"    },
     {   id : "projects", title: "Projects"    },
