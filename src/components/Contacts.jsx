@@ -50,8 +50,8 @@ const Contact = () => {
             <ul className="writeups-grid">
                 {contact.map((link) => (
                     <a href={link.href}>
-                        <div key={link.href} className="glass-card glass-card-accent glass-card-hover">
-                            <a href={link.href} className={link.class}>
+                        <div key={link.href} className="glass-card glass-card-accent glass-card-hover" target="_blank" rel="noopener noreferrer">
+                            <a href={link.href} className={link.class}  target="_blank" rel="noopener noreferrer">
                                 <img src={link.logo} alt="logo" />
                                 <p>{link.title}</p>
                             </a>

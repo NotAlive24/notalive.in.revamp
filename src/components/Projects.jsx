@@ -51,7 +51,7 @@ const Projects = () => {
                 {projects.map((link) => (
                     <a href={link.href}>
                         <div key={link.href} className="glass-card glass-card-accent glass-card-hover">
-                            <a href={link.href}>{link.title}</a>
+                            <a href={link.href}>{link.title} target="_blank" rel="noopener noreferrer"</a>
                         </div>
                     </a>
                 ))}
