@@ -1200,3 +1200,10 @@ nav li a:hover {
     0 32px 80px rgba(0, 0, 0, 0.38),
     inset 0 1px 0 rgba(160, 240, 255, 0.10);
 }
+
+
+.writeups-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
