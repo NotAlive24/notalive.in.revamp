@@ -1,3 +1,5 @@
+import Projects from "../src/components/Projects"
+
 export const navLinks = [
     {   id : "about", title: "About Me"    },
     {   id : "achievements", title: "Achievements"    },
@@ -10,4 +12,9 @@ export const navLinks = [
 export const writeups = [
     {   href : "isc2", title: "ISC2"    },
     {   href : "thm", title: "TryHackMe"    }
+]
+
+
+export const projects = [
+    {   href : "https://github.com/NotAlive24/void-scan", title: "Void-Scan"    }
 ]

@@ -5,6 +5,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import About from "./components/About"
 import Achievements from "./components/Achievements";
 import Writeups from "./components/Write-ups";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <Achievements />
       <Writeups />
+      <Projects />
 
 
       {/* Add your future sections/components below Hero.
