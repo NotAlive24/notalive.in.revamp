@@ -33,7 +33,7 @@ const Navbar = () => {
     <nav>
       <div className="nav-inner">
         <a href="#home" className="brand">
-          <img src="/logo.png" alt="Not Alive logo" />
+          <img src="logo.png" alt="Not Alive logo" />
           <p>Not Alive</p>
         </a>
 
